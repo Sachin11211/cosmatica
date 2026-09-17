@@ -1,0 +1,4 @@
+/* App.css - intentionally minimal. All styling is in index.css and Tailwind utilities. */
+.App {
+    text-align: left;
+}

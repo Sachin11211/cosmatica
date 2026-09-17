@@ -1,0 +1,120 @@
+{
+  "project_name": "Cosmetica",
+  "theme": "Light",
+  "archetype": "5 (Jewel & Luxury) infused with 1 (Organic & Earthy)",
+  "core_vibe": "Feminine, festive, premium, rooted in Indian/South Asian beauty culture yet modern and sophisticated.",
+  "colors": {
+    "background": {
+      "base": "#FDFAF6",
+      "alt": "#F5EFE6",
+      "description": "Warm Ivory and Pearl bases to create a luxurious, organic, skin-like canvas. Avoid pure white."
+    },
+    "primary": {
+      "hex": "#7A1022",
+      "name": "Deep Crimson / Maroon",
+      "description": "Rich, festive maroon reminiscent of traditional Sindoor, Bindi, and Mehndi hues. Used for primary CTAs and emphasis."
+    },
+    "secondary": {
+      "hex": "#1A3A32",
+      "name": "Deep Forest / Mehendi Green",
+      "description": "Grounding dark green inspired by fresh henna leaves. Used for high-contrast text and footer backgrounds."
+    },
+    "accents": {
+      "gold": "#D4AF37",
+      "rose_gold": "#B76E79",
+      "champagne": "#F7E7CE"
+    },
+    "text": {
+      "main": "#1A1A1A",
+      "muted": "#5C5C5C",
+      "inverse": "#FDFAF6"
+    },
+    "rules": [
+      "No purple or teal anywhere in the UI.",
+      "No flat gradients. Use metallic/shimmer gradients (gold/champagne) for accents.",
+      "Primary CTAs must be Deep Crimson with Gold/Rose Gold text or hover states."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "'Playfair Display', serif",
+      "weights": ["400", "700", "900"],
+      "usage": "H1-H3. Elegant, editorial, high-fashion. Must use tight tracking (tracking-tight) for large sizes."
+    },
+    "body": {
+      "family": "'Outfit', sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Clean, modern sans for legibility and contemporary balance. Used for all paragraphs, labels, and small UI text."
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl tracking-tight text-primary",
+      "h2": "text-4xl sm:text-5xl tracking-tight text-secondary",
+      "h3": "text-2xl sm:text-3xl text-secondary",
+      "body": "text-base leading-relaxed text-text-main",
+      "overline": "text-sm uppercase tracking-[0.2em] text-accents-gold"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Editorial and spacious. Treat products like art pieces in a gallery.",
+    "spacing": "Generous paddings (p-12, p-16, py-24). Elements must have room to breathe.",
+    "grids": {
+      "hero": "Asymmetrical editorial layout. Image overlapping text or a side-by-side with heavy negative space.",
+      "category_bento": "grid-cols-1 md:grid-cols-12 gap-8 with overlapping image frames. E.g., Hero image spans 8 cols, secondary spans 4 cols.",
+      "products": "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 with gap-6. Keep it clean and aligned."
+    },
+    "borders_and_surfaces": "Soft skeuomorphism. 1px solid borders in #E5DCC5 (soft gold/champagne). Subtle, diffuse shadows (shadow-xl with 10% opacity) for floating cards."
+  },
+  "motion_and_interactions": {
+    "libraries_required": ["framer-motion", "lucide-react"],
+    "hero_animation": "Slow, cinematic zoom on the hero image. Staggered fade-up and slide-up for headings and CTAs.",
+    "ambient_effects": "Subtle floating particles (like rose petals or gold dust) in the background of the hero or featured sections using framer-motion.",
+    "hover_states": {
+      "buttons": "Slight scale up (scale-105), shadow expands, background transitions smoothly from Crimson to deeper Maroon.",
+      "product_cards": "Image slow zoom on hover. A subtle gold border glow or metallic shimmer sweeps across the card."
+    },
+    "scroll": "Smooth section reveals. Fade in and slide up for sections as they enter the viewport."
+  },
+  "components": {
+    "buttons": "Sharp corners or very subtle rounding (rounded-sm). Use 'Deep Crimson' background with 'Warm Ivory' text. Add an inner border of 1px gold for luxury feel.",
+    "navigation": "Sticky, glassmorphism header (backdrop-blur-xl bg-[#FDFAF6]/80) with a 1px border-b in champagne. Center-aligned logo in Serif. Shopping cart icon with red dot notification.",
+    "cart_drawer": "Slide-over drawer from the right. Must include animated entrance. Clear typography for order summary, elegant quantity increment/decrement controls.",
+    "testimonials": "Carousel with soft cross-fades. Quote text in large Serif (italicized).",
+    "inputs": "Underlined inputs (border-b only) or softly rounded borders. No heavy boxy inputs. Minimalist and elegant."
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1760461804494-c39017a52e6b",
+      "description": "A woman in traditional indian attire smiles gently. Perfect for the main editorial hero.",
+      "usage": "Main Hero Background or Asymmetrical Hero Image"
+    },
+    "category_mehndi": {
+      "url": "https://images.pexels.com/photos/5776642/pexels-photo-5776642.jpeg",
+      "description": "Intricate henna designs on hands in close-up.",
+      "usage": "Mehndi/Henna Category Card"
+    },
+    "category_sindoor_bindi": {
+      "url": "https://images.pexels.com/photos/9157350/pexels-photo-9157350.jpeg",
+      "description": "Close-up portrait of an Indian woman in traditional jewelry with closed eyes.",
+      "usage": "Sindoor & Bindi Category / Brand Story"
+    },
+    "category_payal": {
+      "url": "https://images.pexels.com/photos/7068000/pexels-photo-7068000.jpeg",
+      "description": "Female legs in precious golden anklets on a dark background.",
+      "usage": "Payal/Anklets Category Card"
+    },
+    "category_cosmetics": {
+      "url": "https://images.pexels.com/photos/6739657/pexels-photo-6739657.jpeg",
+      "description": "Close-up of a bold red lipstick with a metallic casing.",
+      "usage": "Daily Cosmetics / Featured Product"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use framer-motion for ALL micro-interactions, especially the floating petals and smooth page scroll reveals.",
+    "Avoid standard Vercel/Shadcn UI boxed looks. Strip the borders and heavy backgrounds; rely on negative space, typography, and subtle 1px champagne borders.",
+    "DO NOT USE INTER OR ROBOTO. Enforce Playfair Display for headings and Outfit for body. You may need to import these from Google Fonts in index.css.",
+    "Build a functional, animated shopping cart drawer (slide-in from right). Include quantity controls and remove-item functionality.",
+    "Ensure the hero section has an editorial, high-end fashion magazine feel, not a basic SaaS layout.",
+    "Apply 'data-testid' to all buttons, navigation links, and cart controls.",
+    "For the ambient animations, create a dedicated 'FloatingPetals' or 'GoldDust' component using framer-motion floating divs layered absolutely in the background with z-[-1] and low opacity."
+  ]
+}
