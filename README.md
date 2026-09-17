@@ -2,7 +2,7 @@
 
 Jewelry, cosmetics, and gifting — Cosmatica, Suraj Complex, Bartand, Dhanbad.
 
-Live site: https://cosmatica.onrender.com/api/ (backend) · [add your Netlify URL here]
+Live site: https://cosmatica.onrender.com/api/ (backend) · https://cosmatica-bartand.netlify.app/   (frontend)
 
 ## Stack
 
