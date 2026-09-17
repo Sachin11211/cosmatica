@@ -85,3 +85,4 @@ android-sdk/
 .env.local
 backend/.env
 frontend/.env
+.emergent/
